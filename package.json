@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/ikkanlaz/MongooseNews/issues"
   },
-  "homepage": "https://github.com/ikkanlaz/MongooseNews#readme"
+  "homepage": "https://github.com/ikkanlaz/MongooseNews#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.11.10",
+    "request": "^2.81.0"
+  }
 }
