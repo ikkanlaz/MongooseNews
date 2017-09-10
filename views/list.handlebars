@@ -1,0 +1,39 @@
+<h1 class="white-text">Mongoose News</h1>
+<div class="row">
+    {{#each articles}}
+    <div class="col s12">
+        <div class="card horizontal">
+            <div class="card-stacked">
+                <a class="card-content menu-content" href="{{this.link}}">
+                    <span class="card-title activator grey-text text-darken-4">{{this.title}}</span>
+                    <p class="grey-text text-darken-3">{{this.description}}</p>
+                    
+                </a>
+                <div class="card-action">
+                    <button class="waves-effect waves-light btn modal-trigger" data-target="modal1"><i class="material-icons left">comment</i>Add Comment</button>
+                    <div id="modal1" class="modal">
+                        <div class="modal-content">
+                            <h4>Modal Header</h4>
+                            <p>A bunch of text</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{/each}}
+</div>
+
+<script>
+
+    $(document).on("click", ".modal-trigger", function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+
+    $('#modal1').modal('open');
+  });
+</script>
